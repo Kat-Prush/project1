@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="nojs">
+<head>
+  <title>HTML Form Elements</title>
+  <link rel="stylesheet" media="screen" href="css/meyers_and_normalize-form_reset.css">
+  <link rel="stylesheet" media="screen" href="css/screen.css">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main id="content">
+  <form method="get" action="#null">
+    <img src="media/flowers.jpg" alt="Lavender fields in Grasse">
+    <h1>Perfume Workshop</h1>
+    <p>
+      Design your own signature scent.
+    </p>
+      <ol>
+      <li id="input-phone">
+        <label id="clear" for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone">
+      </li>
+      <li id="input-email">
+        <label id="clear" for="email">Email</label>
+        <input type="email" name="email" id="email" pattern="^.+@.+$" placeholder="Email">
+      </li>
+      <li id="input-age-verification">
+        <input type="checkbox" id="age-verification" name="age-verification" value="18">
+        <label for="age-verification">Subscribe to our Newsletter and be alerted to sales and promotions. Receive 10% off your first class!</label>
+      </li>
+      <li id="input-submit">
+        <input type="submit" name="submit" id="submit" value="Learn how to design the fragrance of your dreams">
+      </li>
+    </ol>
+  </form>
+</main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
