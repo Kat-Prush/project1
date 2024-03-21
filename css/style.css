@@ -1,28 +1,20 @@
+/* General styles */
 body, h1, p, ol {
   margin: 0;
   padding: 0;
 }
 
-
 body {
   font-size: 16px;
   line-height: 1.5;
   font-family: "Noto Serif Display", "Calibri", "Trebuchet", serif;
-  font-style:italic;
-
+  font-style: italic;
 }
 
 h1 {
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
   margin-bottom: 1rem;
   text-align: center;
-}
-
-.img {
-  background-image: url('media/flowers.jpg');
-  background-position: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 p {
@@ -31,8 +23,7 @@ p {
 }
 
 #content {
-  display:contents;
-  max-width: 500px; 
+  max-width: 500px;
   margin: 0 auto;
   padding: 50px;
   text-align: center;
@@ -40,27 +31,20 @@ p {
 
 form {
   margin-top: 20px;
-  justify-content:flex-start;
-  align-items: center;
+  display: flex;
   flex-direction: column;
-  display: flex; 
-  text-align: left; 
-  box-shadow: 20px 20px 20px 20px rgba(10,5,5,.5);
+  align-items: center;
+  text-align: left;
+  box-shadow: 20px 20px 20px 20px rgba(10, 5, 5, .5);
 }
 
 label {
   display: block;
   margin-bottom: 1rem;
-  color: #000000; 
+  color: #000000;
 }
 
-input[type="phone"] {
-    width: 100%;
-    padding: 10px 30px;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-  }
-
+input[type="phone"],
 input[type="email"] {
   width: 100%;
   padding: 10px 30px;
@@ -73,17 +57,22 @@ input[type="checkbox"] {
 }
 
 input[type="submit"] {
-  background-color: #5d0aa6; 
-  color: #fff; 
+  background-color: #5d0aa6;
+  color: #fff;
   padding: 10px 20px;
   border: none;
   cursor: progress;
   font-style: italic;
 }
 
+/* Media queries */
+@media (min-width: 420px) {
+  form {
+    width: 90%;
+  }
+}
 
-
-@media only screen and (min-width:480px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   body {
     font-size: 14px;
   }
@@ -95,6 +84,4 @@ input[type="submit"] {
   input[type="submit"] {
     width: 100%;
   }
-
-
 }
