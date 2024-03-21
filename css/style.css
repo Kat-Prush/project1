@@ -70,14 +70,18 @@ input[type="submit"] {
 
 /* Media queries */
 @media (min-width: 420px) {
-  form {
-    width: 90%;
+  body{
+    font-size: 14px;
+  }
+  
+  form{
+    width: 90%
   }
 }
 
 @media (min-width: 768px) {
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   #content {
@@ -86,5 +90,15 @@ input[type="submit"] {
 
   input[type="submit"] {
     width: 100%;
+  }
+}
+
+@media (min-width: 1024){
+  body {
+    font-size: 18px;
+  }
+
+  #content {
+    max-width: 800px
   }
 }
