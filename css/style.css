@@ -98,7 +98,7 @@ input[type="submit"] {
   }
 }
 
-@media (min-width: 1024){
+@media (min-width: 1024px){
   body {
     font-size: 18px;
   }
